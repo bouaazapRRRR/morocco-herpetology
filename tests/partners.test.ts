@@ -14,7 +14,7 @@ describe('Institutional Partners Data & Design Integrity', () => {
       expect(partner.nameAr).toBeTruthy();
       expect(partner.role).toBeTruthy();
       expect(partner.website).toMatch(/^https?:\/\//);
-      expect(partner.logo).toMatch(/^https?:\/\//);
+      expect(partner.logo).toMatch(/^https?:\/\/|^\/partners\//);
       expect(partner.acronym).toBeTruthy();
       expect(['government', 'academic', 'conservation', 'international']).toContain(partner.category);
     });

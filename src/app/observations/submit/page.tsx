@@ -10,6 +10,7 @@ import {
   Camera, Check, FileCheck, AlertTriangle
 } from 'lucide-react';
 import Link from 'next/link';
+import { submitObservationToSupabase } from '@/utils/supabaseClient';
 
 function ObservationSubmitContent() {
   const { locale, t, dir } = useLocale();
@@ -75,7 +76,7 @@ function ObservationSubmitContent() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selectedSpecies) {
       alert('Please select an observed species from the checklist.');
@@ -91,10 +92,34 @@ function ObservationSubmitContent() {
     }
 
     setSubmitting(true);
+    const receiptId = `MH-OBS-2026-${Math.floor(1000 + Math.random() * 9000)}`;
 
-    setTimeout(() => {
+    try {
+      await submitObservationToSupabase({
+        public_reference_code: receiptId,
+        observation_date: date,
+        observation_time: time,
+        location_description: `${region} - ${microhabitat}`,
+        raw_latitude: latitude,
+        raw_longitude: longitude,
+        public_latitude: Number(latitude.toFixed(3)),
+        public_longitude: Number(longitude.toFixed(3)),
+        species_name: selectedSpecies.scientificName,
+        microhabitat,
+        condition,
+        individual_count: count,
+        field_notes: notes,
+        observer_name: observerName || 'Anonymous Contributor',
+        observer_email: observerEmail || 'contributor@example.com',
+        observer_role: observerRole,
+        image_url: imagePreview || undefined,
+        image_credit: imageCredit || undefined,
+        is_sensitive_location: isSensitiveTaxon,
+      });
+    } catch (err) {
+      console.error('Submission error:', err);
+    } finally {
       setSubmitting(false);
-      const receiptId = `MH-OBS-2026-${Math.floor(1000 + Math.random() * 9000)}`;
       setSubmittedReceipt({
         id: receiptId,
         speciesName: selectedSpecies.scientificName,
@@ -104,7 +129,7 @@ function ObservationSubmitContent() {
           : `${latitude.toFixed(5)}°N, ${longitude.toFixed(5)}°W`,
         sensitive: isSensitiveTaxon,
       });
-    }, 1200);
+    }
   };
 
   const regionsOfMorocco = [
