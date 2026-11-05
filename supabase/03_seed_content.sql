@@ -45,9 +45,9 @@ INSERT INTO conservation_projects (
     '["Plus de 2 100 références bibliographiques historiques et modernes indexées.","Checklist nationale de 129 espèces d''herpétofaune et scorpions numérisée.","Réseau de validation scientifique établi avec l''Université Ibn Zohr et des partenaires internationaux."]'::jsonb,
     '["فهرسة أكثر من 2100 مرجع علمي حول زواحف وبرمائيات المغرب.","توثيق القائمة الوطنية لـ 129 نوعاً مع الأسماء العربية والفرنسية والإنجليزية.","إرساء شبكة التحقق العلمي بالتعاون مع جامعة ابن زهر ومؤسسات دولية."]'::jsonb,
     'https://moroccoherpetology.com/wp-content/uploads/2024/08/Naja-haje-39.jpg',
-    '"Atlas","Citizen Science","Mapping","AI Identification","Data Protection"'::text[],
+    ARRAY['Atlas', 'Citizen Science', 'Mapping', 'AI Identification', 'Data Protection']::text[],
     '[{"name":"Université Ibn Zohr (UIZ Agadir)","role":"Scientific Supervision & Taxonomic Research"},{"name":"Agence Nationale des Eaux et Forêts (ANEF)","role":"Protected Areas & National Wildlife Governance"},{"name":"Fauna Morocco","role":"Field Data Exchange & Verification"}]'::jsonb,
-    '"Abdellah Bouazza","Aziza Lansari","Zohayr Dibar"'::text[]
+    ARRAY['Abdellah Bouazza', 'Aziza Lansari', 'Zohayr Dibar']::text[]
   ),
 (
     'from-traps-to-refugia',
@@ -80,9 +80,9 @@ INSERT INTO conservation_projects (
     '["Plus de 85 citernes et bassins agricoles répertoriés et classés selon leur niveau de risque.","Déploiement de la première génération de rampes dans la région d''Aït Baha avec des échappées confirmées.","Partenariat actif avec les coopératives agricoles de Souss-Massa."]'::jsonb,
     '["مسح أكثر من 85 مطفية وحوضاً زراعياً وتصنيفها حسب درجة الخطورة.","تركيب الجيل الأول من سلالم وشبكات الهروب في منطقة آيت باها وتوثيق نجاح خروج الكائنات الحية.","بناء شراكات فعالة مع التعاونيات الفلاحية في منطقة سوس ماسة."]'::jsonb,
     'https://moroccoherpetology.com/wp-content/uploads/2026/08/2.png',
-    '"Wildlife Rescue","Cisterns","Matfiya","Anti-Atlas","Applied Conservation"'::text[],
+    ARRAY['Wildlife Rescue', 'Cisterns', 'Matfiya', 'Anti-Atlas', 'Applied Conservation']::text[],
     '[{"name":"Chester Zoo","role":"Conservation Engineering & Financial Support"},{"name":"Aquatis Aquarium-Vivarium Lausanne","role":"Technical Advisory & Conservation Expertise"},{"name":"AMANAT","role":"Local Community Coordination & Outreach"}]'::jsonb,
-    '"Soufiane Zaroual","Abdellah Bouazza","Mohamed Mousaid"'::text[]
+    ARRAY['Soufiane Zaroual', 'Abdellah Bouazza', 'Mohamed Mousaid']::text[]
   ),
 (
     'puff-adder-conservation',
@@ -115,9 +115,9 @@ INSERT INTO conservation_projects (
     '["Sauvetage et relocalisation réussie de plusieurs spécimens sauvages trouvés dans des serres agricoles.","Publication des données sur l''écologie thermique dans des revues herpétologiques internationales.","Partenariat éducatif et conservatoire établi avec Crocoparc Agadir et les clubs scolaires."]'::jsonb,
     '["إنقاذ ونقل العديد من العينات الحية من البيوت المغطاة والمزارع إلى مناطق برية محمية.","نشر دراسات محكمة حول البيئة الحرارية وسلوك هذا النوع النادر في المجلات العلمية.","إبرام شراكات تعليمية مع حديقة كروكوبارك والنوادي البيئية المحلية."]'::jsonb,
     'https://moroccoherpetology.com/wp-content/uploads/2024/07/Naja-scaled.jpg',
-    '"Bitis arietans","Viperidae","Snakebite Prevention","Conservation Breeding","Arganeraie"'::text[],
+    ARRAY['Bitis arietans', 'Viperidae', 'Snakebite Prevention', 'Conservation Breeding', 'Arganeraie']::text[],
     '[{"name":"Crocoparc Agadir","role":"Ex-situ Conservation Facilities & Public Education"},{"name":"HERP Belgium","role":"Field Expedition & International Herpetology Collaboration"},{"name":"Université Ibn Zohr (UIZ)","role":"Genetics & Ecological Research"}]'::jsonb,
-    '"Abdellah Bouazza","Soufiane Zaroual","Aziza Lansari"'::text[]
+    ARRAY['Abdellah Bouazza', 'Soufiane Zaroual', 'Aziza Lansari']::text[]
   ),
 (
     'biodiversity-in-action-ait-baha',
@@ -150,9 +150,9 @@ INSERT INTO conservation_projects (
     '["Série temporelle de données continues sur 5 ans établie pour l''herpétofaune de l''Anti-Atlas.","Identification de populations isolées inédites de sauriens endémiques en altitude.","Publication d''un guide pédagogique valorisant la richesse biologique des monts d''Aït Baha."]'::jsonb,
     '["توثيق بيانات ميدانية مستمرة على مدى 5 سنوات حول زواحف الأطلس الصغير.","تسجيل تجمعات نادرة وغير موثقة سابقاً من السحالي المتوطنة في المرتفعات.","إصدار دليل تربوي يبرز التنوع البيولوجي الفريد لإقليم اشتوكة آيت باها."]'::jsonb,
     'https://moroccoherpetology.com/wp-content/uploads/2026/08/1.png',
-    '"Anti-Atlas","Aït Baha","Mountain Herpetofauna","Gueltas","Endemics"'::text[],
+    ARRAY['Anti-Atlas', 'Aït Baha', 'Mountain Herpetofauna', 'Gueltas', 'Endemics']::text[],
     '[{"name":"Université Ibn Zohr","role":"Ecology Department Fieldwork & Student Training"},{"name":"AMANAT","role":"Local Community Liaison"},{"name":"La Perle aux Oiseaux","role":"Environmental Education Partner"}]'::jsonb,
-    '"Abdellah Bouazza","Aziza Lansari","Khaoula Aouallou"'::text[]
+    ARRAY['Abdellah Bouazza', 'Aziza Lansari', 'Khaoula Aouallou']::text[]
   ),
 (
     'serpentid',
@@ -185,9 +185,9 @@ INSERT INTO conservation_projects (
     '["Architecture logicielle développée par les élèves-ingénieurs en informatique de l''Université Ibn Zohr.","Banque d''images de référence constituée pour les 26 espèces de serpents marocains.","Intégration directe dans la nouvelle plateforme d''observation de Morocco Herpetology."]'::jsonb,
     '["تطوير النموذج البرمجي بواسطة طلبة ومهندسي المعلوميات بجامعة ابن زهر.","توثيق الخصائص التشخيصية الدقيقة لكافة أنواع الثعابين الـ 26 بالمغرب.","دمج النظام ضمن منصة التوثيق الميداني الجديدة لموقع Morocco Herpetology."]'::jsonb,
     'https://moroccoherpetology.com/wp-content/uploads/2026/08/Image2.png',
-    '"Artificial Intelligence","Snake Identification","Snakebite","Tele-Herpetology","Medical Safety"'::text[],
+    ARRAY['Artificial Intelligence', 'Snake Identification', 'Snakebite', 'Tele-Herpetology', 'Medical Safety']::text[],
     '[{"name":"Université Ibn Zohr (Génie Informatique)","role":"Machine Learning & Software Engineering"},{"name":"Société Marocaine de Toxicologie Clinique","role":"Clinical Guidance & Antivenom Advisory"}]'::jsonb,
-    '"Abdellah Bouazza","Oumaima Hatim","Ghizlane Hadidi","Aicha El khddar"'::text[]
+    ARRAY['Abdellah Bouazza', 'Oumaima Hatim', 'Ghizlane Hadidi', 'Aicha El khddar']::text[]
   ),
 (
     'chamaeleo-chamaeleon-conservation',
@@ -220,9 +220,9 @@ INSERT INTO conservation_projects (
     '["Plus de 240 caméléons saisis soignés et relâchés avec succès dans des réserves naturelles.","Supports éducatifs largement distribués aux écoles du Souss-Massa et de Marrakech-Safi.","Étude scientifique sur l''impact du commerce et les indicateurs biométriques de santé en cours de publication."]'::jsonb,
     '["إعادة تأهيل وإطلاق أكثر من 240 حرباء مصادرة في محميات ومناطق برية آمنة.","توزيع حقائب ومواد تعليمية على المدارس في جهتي سوس ماسة ومراكش آسفي.","إعداد ورقة علمية حول التأثيرات البيولوجية للتجارة غير القانونية ومؤشرات صحة العينات."]'::jsonb,
     'https://moroccoherpetology.com/wp-content/uploads/2026/08/6.png',
-    '"Chamaeleo chamaeleon","CITES","Wildlife Trade","Rehabilitation","Public Awareness"'::text[],
+    ARRAY['Chamaeleo chamaeleon', 'CITES', 'Wildlife Trade', 'Rehabilitation', 'Public Awareness']::text[],
     '[{"name":"Agence Nationale des Eaux et Forêts (ANEF)","role":"Wildlife Law Enforcement & Confiscation Handoff"},{"name":"Crocoparc Agadir","role":"Veterinary Quarantine & Rehabilitation Facilities"},{"name":"La Perle aux Oiseaux","role":"Wildlife Care & Educational Outreach"}]'::jsonb,
-    '"Aziza Lansari","Abdellah Bouazza","Louis Gonin"'::text[]
+    ARRAY['Aziza Lansari', 'Abdellah Bouazza', 'Louis Gonin']::text[]
   )
 ON CONFLICT (slug) DO NOTHING;
 
@@ -245,7 +245,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Quedenfeldtia trachyblepharus","Atlas Day Gecko","Reproduction","Egg size","High Atlas","Morocco"'::text[],
+    ARRAY['Quedenfeldtia trachyblepharus', 'Atlas Day Gecko', 'Reproduction', 'Egg size', 'High Atlas', 'Morocco']::text[],
     TRUE,
     ''
   ),
@@ -262,7 +262,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Sea turtles","Strandings","Marine biodiversity","Conservation","Morocco"'::text[],
+    ARRAY['Sea turtles', 'Strandings', 'Marine biodiversity', 'Conservation', 'Morocco']::text[],
     TRUE,
     ''
   ),
@@ -279,7 +279,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Buthus barbouri","Scorpiones","Buthidae","Taxonomy","Scorpion"'::text[],
+    ARRAY['Buthus barbouri', 'Scorpiones', 'Buthidae', 'Taxonomy', 'Scorpion']::text[],
     FALSE,
     ''
   ),
@@ -296,7 +296,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Tityus tenuimanus","Leiurus","Scorpiones","Buthidae","Taxonomy"'::text[],
+    ARRAY['Tityus tenuimanus', 'Leiurus', 'Scorpiones', 'Buthidae', 'Taxonomy']::text[],
     FALSE,
     ''
   ),
@@ -313,7 +313,7 @@ INSERT INTO publications (
     'https://doi.org/10.1163/15685381-bja10242',
     '',
     '',
-    '"Trogonophis wiegmanni","Worm lizard","Physiology","Water loss","Morocco"'::text[],
+    ARRAY['Trogonophis wiegmanni', 'Worm lizard', 'Physiology', 'Water loss', 'Morocco']::text[],
     TRUE,
     ''
   ),
@@ -330,7 +330,7 @@ INSERT INTO publications (
     '',
     '',
     'https://herpetologynotes.org/index.php/hn/article/view/214',
-    '"Scincus","Scincopus","Scincus scincus","Sandfish","Distribution","Morocco"'::text[],
+    ARRAY['Scincus', 'Scincopus', 'Scincus scincus', 'Sandfish', 'Distribution', 'Morocco']::text[],
     TRUE,
     ''
   ),
@@ -347,7 +347,7 @@ INSERT INTO publications (
     'https://doi.org/10.4000/13ltl',
     '',
     '',
-    '"Snake charmers","Tourism","Ethics","Jemaa el-Fna","Marrakech","Morocco"'::text[],
+    ARRAY['Snake charmers', 'Tourism', 'Ethics', 'Jemaa el-Fna', 'Marrakech', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -364,7 +364,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Uromastyx","Distribution","Phenotypic variability","Morocco"'::text[],
+    ARRAY['Uromastyx', 'Distribution', 'Phenotypic variability', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -381,7 +381,7 @@ INSERT INTO publications (
     '',
     'https://herpetologynotes.org/index.php/hn/article/view/212/72',
     '',
-    '"Chalcides montanus","Tropiocolotes algericus","Arachnids","Predation","Morocco"'::text[],
+    ARRAY['Chalcides montanus', 'Tropiocolotes algericus', 'Arachnids', 'Predation', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -398,7 +398,7 @@ INSERT INTO publications (
     'https://doi.org/10.48716/bullshf.187-4',
     '',
     '',
-    '"Telescopus tripolitanus","Snake","Distribution","Morocco"'::text[],
+    ARRAY['Telescopus tripolitanus', 'Snake', 'Distribution', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -415,7 +415,7 @@ INSERT INTO publications (
     'https://doi.org/10.1163/15685381-BJA10218',
     '',
     '',
-    '"Saurodactylus brosseti","Phylogeography","Contact zones","Morocco"'::text[],
+    ARRAY['Saurodactylus brosseti', 'Phylogeography', 'Contact zones', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -432,7 +432,7 @@ INSERT INTO publications (
     'https://doi.org/10.3390/AI6020021',
     '',
     '',
-    '"Artificial intelligence","Deep learning","Snake identification","Snakebite","Morocco"'::text[],
+    ARRAY['Artificial intelligence', 'Deep learning', 'Snake identification', 'Snakebite', 'Morocco']::text[],
     TRUE,
     ''
   ),
@@ -449,7 +449,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Varanus griseus","Desert Monitor","Wells","Conservation","Morocco"'::text[],
+    ARRAY['Varanus griseus', 'Desert Monitor', 'Wells', 'Conservation', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -466,7 +466,7 @@ INSERT INTO publications (
     'https://doi.org/10.1016/J.BIOCHI.2024.07.008',
     '',
     '',
-    '"Vipera monticola","Venom","Mountain viper","North Africa","Morocco"'::text[],
+    ARRAY['Vipera monticola', 'Venom', 'Mountain viper', 'North Africa', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -483,7 +483,7 @@ INSERT INTO publications (
     'https://doi.org/10.11160/BAH.249',
     '',
     '',
-    '"Vipera monticola","Citizen science","Distribution","Fieldwork","Morocco"'::text[],
+    ARRAY['Vipera monticola', 'Citizen science', 'Distribution', 'Fieldwork', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -500,7 +500,7 @@ INSERT INTO publications (
     'https://doi.org/10.1080/01647954.2021.2024595',
     '',
     '',
-    '"Testudo graeca","Ticks","Tortoise","Parasites","Morocco"'::text[],
+    ARRAY['Testudo graeca', 'Ticks', 'Tortoise', 'Parasites', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -517,7 +517,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Malpolon monspessulanus","Hemorrhois hippocrepis","High Atlas","Distribution","Morocco"'::text[],
+    ARRAY['Malpolon monspessulanus', 'Hemorrhois hippocrepis', 'High Atlas', 'Distribution', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -534,7 +534,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Checklist","Amphibians","Reptiles","Taxonomy","Arabic names","Morocco"'::text[],
+    ARRAY['Checklist', 'Amphibians', 'Reptiles', 'Taxonomy', 'Arabic names', 'Morocco']::text[],
     TRUE,
     ''
   ),
@@ -551,7 +551,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Cerastes vipera","Sahara sand viper","Distribution","Morocco"'::text[],
+    ARRAY['Cerastes vipera', 'Sahara sand viper', 'Distribution', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -568,7 +568,7 @@ INSERT INTO publications (
     'https://doi.org/10.4018/978-1-5225-7775-1.ch024',
     '',
     '',
-    '"Climate change","Venomous snakes","Snake ecology"'::text[],
+    ARRAY['Climate change', 'Venomous snakes', 'Snake ecology']::text[],
     FALSE,
     ''
   ),
@@ -585,7 +585,7 @@ INSERT INTO publications (
     'https://doi.org/10.4018/978-1-5225-7775-1.ch015',
     '',
     '',
-    '"Heavy metals","Depression","Anxiety","Toxicology"'::text[],
+    ARRAY['Heavy metals', 'Depression', 'Anxiety', 'Toxicology']::text[],
     FALSE,
     ''
   ),
@@ -602,7 +602,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Myriopholis algeriensis","Thread-snake","Distribution modelling","Morocco"'::text[],
+    ARRAY['Myriopholis algeriensis', 'Thread-snake', 'Distribution modelling', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -619,7 +619,7 @@ INSERT INTO publications (
     '',
     '',
     '',
-    '"Caretta caretta","Sea turtle","Stranding","Atlantic Morocco"'::text[],
+    ARRAY['Caretta caretta', 'Sea turtle', 'Stranding', 'Atlantic Morocco']::text[],
     FALSE,
     ''
   ),
@@ -636,7 +636,7 @@ INSERT INTO publications (
     'https://doi.org/10.14202/vetworld.2018.286-292',
     '',
     '',
-    '"Androctonus","Scorpion","Ecological niche modelling","Envenomation"'::text[],
+    ARRAY['Androctonus', 'Scorpion', 'Ecological niche modelling', 'Envenomation']::text[],
     FALSE,
     ''
   ),
@@ -653,7 +653,7 @@ INSERT INTO publications (
     'https://doi.org/10.1080/23802359.2017.1339212',
     '',
     '',
-    '"Quedenfeldtia","Atlas gecko","Mitogenome","Genetics"'::text[],
+    ARRAY['Quedenfeldtia', 'Atlas gecko', 'Mitogenome', 'Genetics']::text[],
     FALSE,
     ''
   ),
@@ -670,7 +670,7 @@ INSERT INTO publications (
     'https://doi.org/10.1111/jzo.12353',
     '',
     '',
-    '"Quedenfeldtia trachyblepharus","Thermoregulation","Reproduction","High Atlas","Morocco"'::text[],
+    ARRAY['Quedenfeldtia trachyblepharus', 'Thermoregulation', 'Reproduction', 'High Atlas', 'Morocco']::text[],
     TRUE,
     ''
   ),
@@ -687,7 +687,7 @@ INSERT INTO publications (
     'https://doi.org/10.1163/15685381-00003015',
     '',
     '',
-    '"Pelophylax saharicus","Water frog","Phylogeography","Atlas Mountains","Morocco"'::text[],
+    ARRAY['Pelophylax saharicus', 'Water frog', 'Phylogeography', 'Atlas Mountains', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -704,7 +704,7 @@ INSERT INTO publications (
     'https://doi.org/10.1163/15685381-00002954',
     '',
     '',
-    '"Discoglossus","Painted frogs","Phylogeography","North Africa","Morocco"'::text[],
+    ARRAY['Discoglossus', 'Painted frogs', 'Phylogeography', 'North Africa', 'Morocco']::text[],
     FALSE,
     ''
   ),
@@ -721,7 +721,7 @@ INSERT INTO publications (
     'https://doi.org/10.1163/15685381-00002900',
     '',
     '',
-    '"Quedenfeldtia trachyblepharus","Colour variation","Gecko","High Atlas","Morocco"'::text[],
+    ARRAY['Quedenfeldtia trachyblepharus', 'Colour variation', 'Gecko', 'High Atlas', 'Morocco']::text[],
     FALSE,
     ''
   )
@@ -973,7 +973,7 @@ INSERT INTO academic_courses (
     'Une formation théorique et pratique intensive axée sur les protocoles d''échantillonnage standardisés, la manipulation sécurisée et éthique des reptiles venimeux et inoffensifs, l''enregistrement acoustique des amphibiens et la biométrie.',
     'دورة تدريبية متقدمة تجمع بين الشق النظري والميداني، لتعلم بروتوكولات المسح القياسية، والتعامل الآمن والأخلاقي مع الزواحف السامة وغير السامة، والرصد الصوتي للبرمائيات.',
     '[{"title":"Module 1: Taxonomy & Morphological Identification","titleFr":"Module 1 : Taxonomie et Identification Morphologique","titleAr":"الوحدة 1: التصنيف العلمي والتشخيص المورفولوجي","description":"Phylogenetics of North African squamates, diagnostic scalation keys, and differentiating cryptic species pairs.","descriptionFr":"Phylogénie des squamates nord-africains, clés d''écaillure et distinction des espèces cryptiques.","descriptionAr":"السلالات التطورية لزواحف شمال إفريقيا، مفاتيح الحراشف التشخيصية، والتمييز بين الأنواع المتشابهة."},{"title":"Module 2: Standardized Field Protocols & GPS Telemetry","titleFr":"Module 2 : Protocoles de Terrain et Télémétrie GPS","titleAr":"الوحدة 2: البروتوكولات الميدانية وتتبع نظام تحديد المواقع","description":"Transect design, visual encounter surveys, environmental parameter logging (temperature, substrate, relative humidity).","descriptionFr":"Méthodes de transects, prospections visuelles et mesure des paramètres microclimatiques.","descriptionAr":"تصميم المسارات الميدانية، والمسوحات البصرية، وتسجيل المعايير البيئية الدقيقة."},{"title":"Module 3: Ethical Handling & Venom Safety Protocols","titleFr":"Module 3 : Manipulation Éthique et Sécurité face aux Venins","titleAr":"الوحدة 3: التعامل الأخلاقي وإجراءات السلامة من السموم","description":"Snake hook techniques, tube immobilization, bite prevention, emergency response, and cold chain handling.","descriptionFr":"Techniques aux crochets, contention en tube transparent, prévention des morsures et premiers secours.","descriptionAr":"تقنيات استخدام خطافات الثعابين، أنابيب الفحص الشفافة، الوقاية من اللدغات، وإجراءات الإسعاف الأولي السليم."},{"title":"Module 4: Data Publishing & Darwin Core Compliance","titleFr":"Module 4 : Publication des Données et Standards Darwin Core","titleAr":"الوحدة 4: نشر البيانات والتوافق مع المعايير الدولية","description":"Managing spatial uncertainty, coordinate blurring for threatened taxa, and formatting records for GBIF and HerpAtlas.","descriptionFr":"Gestion de l''incertitude spatiale, floutage des espèces menacées et formatage conforme au GBIF.","descriptionAr":"إدارة دقة البيانات الجغرافية، وحماية مواقع الأنواع المهددة، والتوافق مع بنوك البيانات العالمية."}]'::jsonb,
-    '"Dr. Abdellah Bouazza","Dr. Aziza Lansari","Soufiane Zaroual"'::text[],
+    ARRAY['Dr. Abdellah Bouazza', 'Dr. Aziza Lansari', 'Soufiane Zaroual']::text[],
     'Undergraduate background in biological sciences, ecology, veterinary medicine, or forestry.',
     'Formation universitaire en biologie, écologie, médecine vétérinaire ou sciences forestières.',
     'خلفية أكاديمية في العلوم البيولوجية، البيئة، الطب البيطري أو الغابات.'
@@ -997,7 +997,7 @@ INSERT INTO academic_courses (
     'Formation médicale essentielle sur l''identification précise des espèces venimeuses marocaines, la physiopathologie des envenimations (Viperidae vs Elapidae), l''administration rigoureuse des antivenins et la lutte contre les pratiques traditionnelles délétères.',
     'دورة متخصصة للأطقم الصحية للتعرف الدقيق على الأنواع السامة بالمغرب، وفيزيولوجيا السموم وتأثيراتها الدموية والعصبية، وبروتوكولات استخدام مضادات السموم، ومحاربة الممارسات الشعبية الخاطئة.',
     '[{"title":"Venomous Fauna of Morocco: Medical Importance","titleFr":"Faune Venimeuse du Maroc d''Intérêt Médical","titleAr":"الحيوانات السامة بالمغرب ذات الأهمية الطبية","description":"Vipers (Daboia, Bitis, Cerastes, Echis) and Cobras (Naja haje legionis): distribution, behavior, and visual recognition.","descriptionFr":"Vipères (Daboia, Bitis, Cerastes, Echis) et Cobras (Naja haje legionis) : répartition et reconnaissance visuelle.","descriptionAr":"الأفاعي الحقيقية والكوبرا المغربية: مناطق التواجد، السلوك، والتمييز البصري السريع."},{"title":"Clinical Syndrome & Antivenom Protocols","titleFr":"Syndromes Cliniques & Protocoles d''Antivenin","titleAr":"المتلازمات السريرية وبروتوكولات الأمصال","description":"Local swelling progression, coagulopathy assessment (20-minute whole blood clotting test), systemic toxicity, and antivenom dosage.","descriptionFr":"Progression de l''œdème, évaluation des troubles de coagulation (test WBCT20) et indications du sérum.","descriptionAr":"متابعة تطور التورم، واختبار تخثر الدم في 20 دقيقة، وجرعات الأمصال المضادة للسم."}]'::jsonb,
-    '"Dr. Abdellah Bouazza","Medical Herpetology Clinical Collaborators"'::text[],
+    ARRAY['Dr. Abdellah Bouazza', 'Medical Herpetology Clinical Collaborators']::text[],
     'Medical degree, nursing diploma, or clinical emergency accreditation.',
     'Diplôme de médecine, diplôme d''infirmier d''État ou accréditation en soins d''urgence.',
     'شهادة في الطب أو التمريض أو ممارسة الإسعافات الطبية المستعجلة.'
@@ -1103,8 +1103,8 @@ INSERT INTO field_expeditions (
     'A 12-day systematic transect through the quartzite and granite massifs of the western Anti-Atlas. 14 isolated seasonal water bodies were examined, confirming healthy recruitment for Discoglossus scovazzi and Bufotes boulengeri. New locality records were verified for Vipera mauritanica and Quedenfeldtia moerens.',
     'Un suivi systématique de 12 jours à travers les massifs de quartzite et de granite. 14 points d''eau saisonniers inspectés ont confirmé le recrutement de Discoglossus scovazzi et Bufotes boulengeri, avec de nouvelles mentions pour Vipera mauritanica.',
     'مهمة استكشافية استمرت 12 يوماً عبر الكتل الصخرية بالأطلس الصغير، شملت فحص 14 نقطة مائية موسمية وتأكيد تكاثر الضفادع المتوطنة ورصد أفاعي وسحالي نادرة.',
-    '"Abdellah Bouazza","Aziza Lansari","Soufiane Zaroual","Zohayr Dibar"'::text[],
-    '"Discoglossus scovazzi","Bufotes boulengeri","Quedenfeldtia moerens","Daboia mauritanica","Agama bibronii","Psammophis schokari"'::text[],
+    ARRAY['Abdellah Bouazza', 'Aziza Lansari', 'Soufiane Zaroual', 'Zohayr Dibar']::text[],
+    ARRAY['Discoglossus scovazzi', 'Bufotes boulengeri', 'Quedenfeldtia moerens', 'Daboia mauritanica', 'Agama bibronii', 'Psammophis schokari']::text[],
     '[{"url":"https://moroccoherpetology.com/wp-content/uploads/2026/08/1.png","caption":"Granitic guelta surveyed near Tafraoute holding breeding Discoglossus","captionFr":"Guelta granitique prospectée près de Tafraoute abritant des têtards","captionAr":"قلتة مائية صخرية قرب تافراوت تحتضن شراغيف الضفدع المتوطن","credit":"Bouazza A."},{"url":"https://moroccoherpetology.com/wp-content/uploads/2026/08/2.png","caption":"Adult Daboia mauritanica documented under quartzite scree at 1,320m","captionFr":"Daboia mauritanica adulte photographiée sous un éboulis à 1 320 m","captionAr":"أفعى موريتانية بالغة موثقة تحت ركام صخري على علو 1320 متر","credit":"Lansari A."}]'::jsonb
   ),
 (
@@ -1125,8 +1125,8 @@ INSERT INTO field_expeditions (
     'Two weeks of nocturnal and morning sand tracking along 480 km of coastal dunes and gravel hamadas. Over 18 reptile species were documented, including fine-scale habitat partitioning between sympatric Acanthodactylus species and active foraging Cerastes.',
     'Deux semaines de prospections nocturnes et matinales sur 480 km de dunes et regs côtiers. Plus de 18 espèces de reptiles ont été relevées avec des données comportementales inédites.',
     'أسبوعان من التتبع الليلي والصباحي عبر 480 كم من الكثبان الساحلية والحمادات، أسفرا عن توثيق أكثر من 18 نوعاً من الزواحف وتسجيل سلوكيات نادرة.',
-    '"Abdellah Bouazza","Mohamed Mousaid","Sacha Facchini","Louis Gonin"'::text[],
-    '"Cerastes cerastes","Acanthodactylus busacki","Acanthodactylus aureus","Spalerosophis diadema","Stenodactylus mauritanicus","Androctonus mauritanicus"'::text[],
+    ARRAY['Abdellah Bouazza', 'Mohamed Mousaid', 'Sacha Facchini', 'Louis Gonin']::text[],
+    ARRAY['Cerastes cerastes', 'Acanthodactylus busacki', 'Acanthodactylus aureus', 'Spalerosophis diadema', 'Stenodactylus mauritanicus', 'Androctonus mauritanicus']::text[],
     '[{"url":"https://moroccoherpetology.com/wp-content/uploads/2026/08/Acanthodactylus-busacki.jpg","caption":"Acanthodactylus busacki in active foraging stance on stabilized white coastal dune","captionFr":"Acanthodactylus busacki en chasse active sur dune blanche stabilisée","captionAr":"سحلية العيون هدبية الأصابع في حالة ترصد ونشاط فوق الكثبان الساحلية","credit":"Bouazza A."},{"url":"https://moroccoherpetology.com/wp-content/uploads/2026/08/6.png","caption":"Nocturnal encounter with Cerastes cerastes partially buried in sand","captionFr":"Rencontre nocturne avec Cerastes cerastes enfouie dans le sable","captionAr":"مشاهدة ليلية للأفعى المقرنة وهي مدفونة جزئياً تحت الرمال","credit":"Mousaid M."}]'::jsonb
   ),
 (
@@ -1147,8 +1147,8 @@ INSERT INTO field_expeditions (
     'High-altitude physiological and behavioral field surveys conducted between 2,200m and 3,100m. The results confirmed that high-elevation females produce significantly larger eggs to ensure embryo development in shortened alpine summers, published in Herpetozoa (Lansari et al., 2026).',
     'Recherche de terrain en haute altitude (2 200 à 3 100 m). Les résultats confirment que les femelles d''altitude pondent des œufs plus volumineux pour compenser la brièveté de l''été alpin, étude publiée dans Herpetozoa (Lansari et al., 2026).',
     'دراسة ميدانية في أعالي الجبال أكدت أن إناث هذا النوع في المرتفعات تضع بيضاً أكبر حجماً لضمان نمو الأجنة خلال فترات الصيف الجبلي القصيرة، ونُشرت النتائج في مجلة Herpetozoa العلمية.',
-    '"Aziza Lansari","Abdellah Bouazza","Nada Ait Bouhmad","Hafsa Mahmoudi"'::text[],
-    '"Quedenfeldtia trachyblepharus","Atlantolacerta andreanskyi","Vipera monticola","Coronella girondica"'::text[],
+    ARRAY['Aziza Lansari', 'Abdellah Bouazza', 'Nada Ait Bouhmad', 'Hafsa Mahmoudi']::text[],
+    ARRAY['Quedenfeldtia trachyblepharus', 'Atlantolacerta andreanskyi', 'Vipera monticola', 'Coronella girondica']::text[],
     '[{"url":"https://moroccoherpetology.com/wp-content/uploads/2026/08/Image2.png","caption":"High alpine scree near Oukaïmeden at 2,750m habitat of Quedenfeldtia trachyblepharus","captionFr":"Éboulis d''altitude à l''Oukaïmeden (2 750 m), habitat de Quedenfeldtia trachyblepharus","captionAr":"منحدرات صخرية شاهقة في أوكايمدن على علو 2750 م، موطن وزغ الأطلس المتوطن","credit":"Lansari A."}]'::jsonb
   ),
 (
@@ -1169,8 +1169,8 @@ INSERT INTO field_expeditions (
     'Systematic night surveys using specialized blacklight torches across rocky slopes, palm groves, and stabilized sand dunes. Rediscovered enigmatic morphs of Buthus and documented micro-habitat specialization between Androctonus and Buthus species.',
     'Prospections nocturnes systématiques sous UV dans les palmeraies et regs. Redécouverte de formes rares de Buthus et documentation fine de la ségrégation de micro-habitat avec Androctonus.',
     'مسوحات ليلية باستخدام مصابيح الأشعة فوق البنفسجية بالواحات والمنحدرات الصحراوية، أثمرت عن إعادة توثيق عينات نادرة وفهم التوزيع البيئي لمختلف أجناس العقارب.',
-    '"Mohamed Mousaid","Abdellah Bouazza","Soufiane Zaroual"'::text[],
-    '"Androctonus liouvillei","Buthus draa","Hottentotta gentili","Cerastes vipera","Eryx jaculus"'::text[],
+    ARRAY['Mohamed Mousaid', 'Abdellah Bouazza', 'Soufiane Zaroual']::text[],
+    ARRAY['Androctonus liouvillei', 'Buthus draa', 'Hottentotta gentili', 'Cerastes vipera', 'Eryx jaculus']::text[],
     '[{"url":"https://moroccoherpetology.com/wp-content/uploads/2026/08/6.png","caption":"Adult Buthus draa fluorescing under 395nm UV light in the middle Drâa valley","captionFr":"Buthus draa adulte fluorescent sous éclairage UV à 395 nm dans la vallée du Drâa","captionAr":"عقرب وادي درعة يظهر التوهج الأخضر المميز تحت الأشعة فوق البنفسجية ليلاً","credit":"Mousaid M."}]'::jsonb
   )
 ON CONFLICT (id) DO NOTHING;
